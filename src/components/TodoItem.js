@@ -38,7 +38,8 @@ const TodoItem = (props) => {
       className="card"
       style={{
         border: item.completed ?  "2px solid #7AB530":"none",
-        backgroundColor: item.completed ? "#202020" :"#2F2F2F"
+        backgroundColor: item.completed ? "#202020" :"#2F2F2F",
+        boxShadow: item.completed? "none":"0 0 16px 21px rgba(0,0,0,0.35)",
       }}
     >
       <textarea
